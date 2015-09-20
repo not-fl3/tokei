@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tokei by Aaronepower</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Tokei</h1>
+      <h2 class="project-tagline">A CLOC(Count Lines Of Code) program, written in Rust.</h2>
+      <a href="https://github.com/Aaronepower/tokei" class="btn">View on GitHub</a>
+      <a href="https://github.com/Aaronepower/tokei/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Aaronepower/tokei/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="tokei" class="anchor" href="#tokei" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tokei</h1>
+
+<p>A blazingly fast CLOC(Count Lines Of Code) program, written in Rust.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>To use tokei, use must add it to your path. Then you can call tokei like so
+<code>$ tokei ./path/to/code</code></p>
+
+<h2>
+<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h2>
+
+<p><code># sudo mv &lt;your_download_location&gt;/tokei /usr/local/bin/tokei</code></p>
+
+<h2>
+<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h2>
+
+<ul>
+<li>Create a folder for tokei</li>
+<li>search for <code>env</code> </li>
+<li>open "edit your enviroment variables"</li>
+<li>edit <code>PATH</code>
+</li>
+<li>paste folder path to the end of the string ie: <code>&lt;path_stuff_here&gt;;C:/tokei;</code>
+</li>
+</ul>
+
+<h1>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h1>
+
+<pre><code>Aaron P. &lt;theaaronepower@gmail.com&gt;
+A quick CLOC (Count Lines Of Code) tool
+
+USAGE:
+  tokei [FLAGS] [OPTIONS] [--] &lt;input&gt;...
+
+FLAGS:
+    -h, --help         Prints help information
+    -l, --languages    prints out supported languages and their extensions
+    -V, --version      Prints version information
+
+OPTIONS:
+    -e, --exclude &lt;exclude&gt;...    Will ignore all files and directories containing the word ie --exclude node_modules
+    -s, --sort &lt;sort&gt;             Will sort based on a certain column ie --sort=files will sort by file count.
+
+ARGS:
+    input...    The input file(s)/directory(ies)
+
+</code></pre>
+
+<h1>
+<a id="supported-languages" class="anchor" href="#supported-languages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Languages</h1>
+
+<p>If there is a language that you want added submit a pull request with the following information</p>
+
+<ul>
+<li>Name of language</li>
+<li>Most common file extension</li>
+<li>The comment syntax (Does it have block comments? is it the same as C?)</li>
+</ul>
+
+<pre><code>ActionScript              (as)
+C                         (c)
+ColdFusion CFScript       (cfc)
+ColdFusion                (cfm)
+Clojure                   (clj)
+CoffeeScript              (coffee)
+C++                       (cpp)
+C#                        (cs)
+CSS                       (css)
+D                         (d)
+Dart                      (dart)
+LISP                      (el)
+Go                        (go)
+C Header                  (h)
+C++ Header                (hpp)
+Haskell                   (hs)
+HTML                      (html)
+Java                      (java)
+JavaScript                (js)
+JSON                      (json)
+JSX                       (jsx)
+Objective-C               (m)
+Objective-C++             (mm)
+Pascal                    (pas)
+PHP                       (php)
+Perl                      (pl)
+Python                    (py)
+R                         (r)
+Ruby                      (rb)
+Ruby HTML                 (rhtml)
+Rust                      (rs)
+Sass                      (sass)
+BASH                      (sh)
+SQL                       (sql)
+Swift                     (swift)
+TypeScript                (ts)
+XML                       (xml)
+YAML                      (yml)
+</code></pre>
+
+<h1>
+<a id="common-issues" class="anchor" href="#common-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Common issues</h1>
+
+<p>If you get errors like the following, it is mostly like due to having folders with paths that too long. For example NPM3.0.0</p>
+
+<pre><code>"The system cannot find the path specified.\r\n"
+</code></pre>
+
+<pre><code>thread &lt;main&gt; has overflowed its stack
+Illegal instruction: 4
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Aaronepower/tokei">Tokei</a> is maintained by <a href="https://github.com/Aaronepower">Aaronepower</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
