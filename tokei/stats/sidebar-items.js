@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Stats","A struct representing the statistics of a file."]]});

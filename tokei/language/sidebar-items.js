@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["LanguageType",""]],"mod":[["language",""],["language_type",""],["languages",""]],"struct":[["Language","Struct representing a single Language."],["Languages","A collection of existing languages(_List of Languages_)"]]});
