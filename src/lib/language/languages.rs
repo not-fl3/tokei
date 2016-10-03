@@ -254,28 +254,6 @@ impl Languages {
     pub fn new() -> Self {
         use super::LanguageType::*;
         let map = btreemap! {
-            ActionScript => Language::new_c(),
-            Ada => Language::new_single(vec!["--"]),
-            Assembly => Language::new_single(vec![";"])
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
-            Asp => Language::new_single(vec!["'", "REM"]),
-            AspNet => Language::new_multi(vec![("<!--", "-->"), ("<%--", "-->")]),
-            Autoconf => Language::new_single(vec!["#", "dnl"]),
-            Bash => Language::new_hash()
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
-            Batch => Language::new_single(vec!["REM", "::"]).set_quotes(vec![]),
-            C => Language::new_c(),
-            CHeader => Language::new_c(),
-            Clojure => Language::new_single(vec![";"]),
-            CoffeeScript => Language::new(vec!["#"], vec![("###", "###")])
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
-            ColdFusion => Language::new_multi(vec![("<!---", "--->")])
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
-            ColdFusionScript => Language::new_c(),
-            Coq => Language::new_func(),
-            Cpp => Language::new_c(),
-            CppHeader => Language::new_c(),
-            CSharp => Language::new_c(),
             CShell => Language::new_hash(),
             Css => Language::new_c()
                 .set_quotes(vec![("\"", "\""), ("'", "'")]),
@@ -313,10 +291,10 @@ impl Languages {
             Jai => Language::new_c().nested(),
             Java => Language::new_c(),
             JavaScript => Language::new_c()
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
+                .set_quotes(vec![("\"", "\""), ("'", "'"), ("`", "`")]),
             Json => Language::new_blank(),
             Jsx => Language::new_c()
-                .set_quotes(vec![("\"", "\""), ("'", "'")]),
+                .set_quotes(vec![("\"", "\""), ("'", "'"), ("`", "`")]),
             Julia => Language::new(vec!["#"], vec![("#=", "=#")]).nested()
                 .set_quotes(vec![("\"", "\""), ("\"\"\"", "\"\"\"")]),
             Kotlin => Language::new_c().nested()

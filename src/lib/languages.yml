@@ -1,0 +1,139 @@
+languages:
+    - ActionScript:
+        base: c
+        extensions: [as]
+    - Ada:
+        single: [--]
+        extensions: [ada, adb, ads, pad]
+    - Assembly:
+        single: [;]
+        quotes: [[\", \"], [\',\']]
+    - Asp:
+        name: ASP
+        single: [\', REM]
+        extensions: [asa, asp]
+    - AspNet:
+        name: ASP.NET
+        multi: [[<!--, -->], [<%--, -->]]
+        extensions: [asax, ascx, asmx, aspx, master, sitemap, webinfo]
+    - Autoconf:
+        single: [#, dnl]
+        extensions: [in]
+    - Bash:
+        name: BASH
+        single: [#]
+        quotes: [[\", \"], [\', \']]
+        env: [bash, sh]
+        extensions: [bash, sh]
+    - Batch:
+        single: [REM, \:\:]
+        extensions: [bat, btm, cmd]
+    - C:
+        base: c
+        extensions: [c, ec, pgc]
+    - CHeader:
+        name: C Header
+        base: c
+        extensions: [h]
+    - Clojure:
+        single: [;]
+        extensions: [clj]
+    - CoffeeScript:
+        single: [#]
+        multi: [[###, \###]]
+        quotes: [[\", \"], [\', \']]
+        extensions: [coffee]
+    - ColdFusion:
+        multi: [<!---, --->]
+        quotes: [[\", \"], [\', \']]
+        extensions: [cfm]
+    - ColdFusionScript:
+        name: ColdFusion CFScript
+        base: c
+        extensions: [cfc]
+    - Coq:
+        base: func
+        extensions: [v]
+    - Cpp:
+        name: C++
+        base: c
+        extensions: [cc, cpp, cxx, c++, pcc]
+    - CppHeader:
+        name: C++ Header
+        base: c
+        extensions: [hh, hpp, hxx]
+    - CSharp:
+        name: C#
+        base: c
+        extensions: [cs]
+    - CShell:
+        name: C Shell
+        base: hash
+        env: [csh]
+        extensions: [csh]
+    - Css:
+        name: CSS
+        
+D
+Dart
+DeviceTree
+Erlang
+Forth
+FortranLegacy
+FortranModern
+Go
+Handlebars
+Haskell
+Html
+Hex
+Idris
+IntelHex
+Isabelle
+Jai
+Java
+JavaScript
+Julia
+Json
+Jsx
+Kotlin
+Less
+LinkerScript
+Lisp
+Lua
+Makefile
+Markdown
+Mustache
+Nim
+ObjectiveC
+ObjectiveCpp
+OCaml
+Oz
+Pascal
+Perl
+Polly
+Php
+Protobuf
+Prolog
+Python
+Qcl
+R
+Razor
+Ruby
+RubyHtml
+Rust
+ReStructuredText
+Sass
+Scala
+Sml
+Sql
+Swift
+Tex
+Text
+Toml
+TypeScript
+VimScript
+UnrealScript
+Wolfram
+Xml
+Yaml
+Zsh
