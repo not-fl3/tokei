@@ -17,11 +17,11 @@ languages:
         multi: [[<!--, -->], [<%--, -->]]
         extensions: [asax, ascx, asmx, aspx, master, sitemap, webinfo]
     - Autoconf:
-        single: [#, dnl]
+        single: [\#, dnl]
         extensions: [in]
     - Bash:
         name: BASH
-        single: [#]
+        single: [\#]
         quotes: [[\", \"], [\', \']]
         env: [bash, sh]
         extensions: [bash, sh]
@@ -39,8 +39,8 @@ languages:
         single: [;]
         extensions: [clj]
     - CoffeeScript:
-        single: [#]
-        multi: [[###, \###]]
+        single: [\#]
+        multi: [[\###, \###]]
         quotes: [[\", \"], [\', \']]
         extensions: [coffee]
     - ColdFusion:
@@ -73,13 +73,31 @@ languages:
         extensions: [csh]
     - Css:
         name: CSS
-        
-D
-Dart
-DeviceTree
-Erlang
-Forth
-FortranLegacy
+        base: js
+        extensions: [css]
+    - D:
+        base: js
+        nested_comments: [[/+, +/]]
+        extensions: [d]
+    - Dart:
+        base: c
+        quotes: [[\", \"], [\', \'], [\""", \"""], [\''', \''']]
+        extensions: [dart]
+    - DeviceTree:
+        name: Device Tree
+        base: c
+        extensions: [dts, dtsi]
+    - Erlang:
+        single: [%]
+        extensions: [erl, hrl]
+    - Forth:
+        single: [\\]
+        multi: [['( ', )]]
+        extensions: [4th, forth, fr, frt, fth, f83, fb, fpm, e4, rx, ft]
+    - FortranLegacy:
+        name: FORTRAN Legacy
+        single: [c, C, !, *]
+        quotes: [[\", \"], [\', \']]
 FortranModern
 Go
 Handlebars

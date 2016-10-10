@@ -2,7 +2,6 @@
 // Use of this source code is governed by the APACHE2.0/MIT licence that can be
 // found in the LICENCE-{APACHE/MIT} file.
 
-
 use std::borrow::Cow;
 use std::fmt;
 use std::path::Path;
